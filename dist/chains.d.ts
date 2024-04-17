@@ -16,20 +16,17 @@ export declare enum ChainId {
     CELO = 42220,
     CELO_ALFAJORES = 44787,
     GNOSIS = 100,
-    MOONBEAM = 1284,
     BNB = 56,
     AVALANCHE = 43114,
-    BASE_GOERLI = 84531,
     BASE = 8453
 }
-export declare const SUPPORTED_CHAINS: readonly [ChainId.MAINNET, ChainId.ZKSYNC_ERA, ChainId.ZKSYNC_ERA_SEPOLIA, ChainId.ZKSYNC_ERA_INMEMORY, ChainId.OPTIMISM, ChainId.OPTIMISM_GOERLI, ChainId.OPTIMISM_SEPOLIA, ChainId.ARBITRUM_ONE, ChainId.ARBITRUM_GOERLI, ChainId.ARBITRUM_SEPOLIA, ChainId.POLYGON, ChainId.POLYGON_MUMBAI, ChainId.GOERLI, ChainId.SEPOLIA, ChainId.CELO_ALFAJORES, ChainId.CELO, ChainId.BNB, ChainId.AVALANCHE, ChainId.BASE, ChainId.BASE_GOERLI];
+export declare const SUPPORTED_CHAINS: readonly [ChainId.MAINNET, ChainId.ZKSYNC_ERA, ChainId.ZKSYNC_ERA_SEPOLIA, ChainId.ZKSYNC_ERA_INMEMORY, ChainId.OPTIMISM, ChainId.OPTIMISM_GOERLI, ChainId.OPTIMISM_SEPOLIA, ChainId.ARBITRUM_ONE, ChainId.ARBITRUM_GOERLI, ChainId.ARBITRUM_SEPOLIA, ChainId.POLYGON, ChainId.POLYGON_MUMBAI, ChainId.GOERLI, ChainId.SEPOLIA, ChainId.CELO_ALFAJORES, ChainId.CELO, ChainId.BNB, ChainId.AVALANCHE, ChainId.BASE];
 export declare type SupportedChainsType = typeof SUPPORTED_CHAINS[number];
 export declare enum NativeCurrencyName {
     ETHER = "ETH",
     MATIC = "MATIC",
     CELO = "CELO",
     GNOSIS = "XDAI",
-    MOONBEAM = "GLMR",
     BNB = "BNB",
     AVAX = "AVAX"
 }
