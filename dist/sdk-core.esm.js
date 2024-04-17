@@ -116,6 +116,39 @@ var inMemoryAddresses = {
 	swapRouter02: swapRouter02
 };
 
+var v3CoreFactoryAddress$1 = "0xb43671017878b3B81929F5c9A9a465066A232118";
+var multicall2Address$1 = "0x63393f9ad741bf64c34e0e30F5A70b286e9056f9";
+var proxyAdminAddress$1 = "0xF33D4d9F02F9a687599B18B81a9AA206A2045aD1";
+var tickLensAddress$1 = "0x2eF54CB1cb5846524100537f01F7d3231E3BFdFe";
+var nftDescriptorLibraryAddressV1_3_0$1 = "0x5b6EB7d73B8516E702205Af4202704a9fa0049f8";
+var nonfungibleTokenPositionDescriptorAddressV1_3_0$1 = "0x8fAf109c29B2a3b0476FfF4AD48eC6b1A7885900";
+var descriptorProxyAddress$1 = "0xef494c2d99d3624EACaC2fD6601BAEBb168e7556";
+var nonfungibleTokenPositionManagerAddress$1 = "0xEfAA4a5D02aE3d037EdeEcE988E7CB9e93a6E2f6";
+var v3MigratorAddress$1 = "0x087080Db35114c0dF351a0C8B40545bF4bDCDB0E";
+var v3StakerAddress$1 = "0xd29FD3C8E5d698eb79C606DCFb7c4bbbB6AFbd63";
+var quoterV2Address$1 = "0x3F314903442cf8353b41916281A9c149bfe0D940";
+var swapRouter02$1 = "0xb84a367362731172F0a4A79B5cD60798451814fd";
+var permit2 = "0x176675327B4Af378fB0aE8f424706Ac76aB3FCA3";
+var universalRouter = "0xDa29DAb8054AC1d8fa88d0BdC198f0925bc90767";
+var WETH = "0x3b77A39Ad9beaCE35e2f4E69763E26fc7a0d1f47";
+var sepoliaAddresses = {
+	v3CoreFactoryAddress: v3CoreFactoryAddress$1,
+	multicall2Address: multicall2Address$1,
+	proxyAdminAddress: proxyAdminAddress$1,
+	tickLensAddress: tickLensAddress$1,
+	nftDescriptorLibraryAddressV1_3_0: nftDescriptorLibraryAddressV1_3_0$1,
+	nonfungibleTokenPositionDescriptorAddressV1_3_0: nonfungibleTokenPositionDescriptorAddressV1_3_0$1,
+	descriptorProxyAddress: descriptorProxyAddress$1,
+	nonfungibleTokenPositionManagerAddress: nonfungibleTokenPositionManagerAddress$1,
+	v3MigratorAddress: v3MigratorAddress$1,
+	v3StakerAddress: v3StakerAddress$1,
+	quoterV2Address: quoterV2Address$1,
+	swapRouter02: swapRouter02$1,
+	permit2: permit2,
+	universalRouter: universalRouter,
+	WETH: WETH
+};
+
 var _V2_FACTORY_ADDRESSES, _V2_ROUTER_ADDRESSES, _CHAIN_TO_ADDRESSES_M, _GOVERNANCE_ALPHA_V1_, _GOVERNANCE_BRAVO_ADD, _MERKLE_DISTRIBUTOR_A, _ARGENT_WALLET_DETECT, _SOCKS_CONTROLLER_ADD;
 var DEFAULT_NETWORKS = [ChainId.MAINNET, ChainId.GOERLI, ChainId.SEPOLIA];
 
@@ -163,7 +196,13 @@ var GOERLI_ADDRESSES = /*#__PURE__*/_extends({}, DEFAULT_ADDRESSES, {
 
 
 var ZKSYNC_ERA_ADDRESSES = DEFAULT_ADDRESSES;
-var ZKSYNC_ERA_SEPOLIA_ADDRESSES = DEFAULT_ADDRESSES;
+var ZKSYNC_ERA_SEPOLIA_ADDRESSES = {
+  v3CoreFactoryAddress: sepoliaAddresses.v3CoreFactoryAddress,
+  multicallAddress: sepoliaAddresses.multicall2Address,
+  quoterAddress: sepoliaAddresses.quoterV2Address,
+  v3MigratorAddress: sepoliaAddresses.v3MigratorAddress,
+  nonfungiblePositionManagerAddress: sepoliaAddresses.nonfungibleTokenPositionManagerAddress
+};
 var ZKSYNC_ERA_INMEMORY_ADDRESSES = {
   v3CoreFactoryAddress: inMemoryAddresses.v3CoreFactoryAddress,
   multicallAddress: inMemoryAddresses.multicall2Address,
