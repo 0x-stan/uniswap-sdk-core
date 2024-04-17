@@ -84,7 +84,13 @@ const GOERLI_ADDRESSES: ChainAddresses = {
 }
 
 // @todo
-const ZKSYNC_ERA_ADDRESSES: ChainAddresses = DEFAULT_ADDRESSES
+const ZKSYNC_ERA_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: sepoliaAddresses.v3CoreFactoryAddress,
+  multicallAddress: sepoliaAddresses.multicall2Address,
+  quoterAddress: sepoliaAddresses.quoterV2Address,
+  v3MigratorAddress: sepoliaAddresses.v3MigratorAddress,
+  nonfungiblePositionManagerAddress: sepoliaAddresses.nonfungibleTokenPositionManagerAddress
+}
 const ZKSYNC_ERA_SEPOLIA_ADDRESSES: ChainAddresses = {
   v3CoreFactoryAddress: sepoliaAddresses.v3CoreFactoryAddress,
   multicallAddress: sepoliaAddresses.multicall2Address,

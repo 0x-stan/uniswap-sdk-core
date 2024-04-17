@@ -195,7 +195,13 @@ var GOERLI_ADDRESSES = /*#__PURE__*/_extends({}, DEFAULT_ADDRESSES, {
 }); // @todo
 
 
-var ZKSYNC_ERA_ADDRESSES = DEFAULT_ADDRESSES;
+var ZKSYNC_ERA_ADDRESSES = {
+  v3CoreFactoryAddress: sepoliaAddresses.v3CoreFactoryAddress,
+  multicallAddress: sepoliaAddresses.multicall2Address,
+  quoterAddress: sepoliaAddresses.quoterV2Address,
+  v3MigratorAddress: sepoliaAddresses.v3MigratorAddress,
+  nonfungiblePositionManagerAddress: sepoliaAddresses.nonfungibleTokenPositionManagerAddress
+};
 var ZKSYNC_ERA_SEPOLIA_ADDRESSES = {
   v3CoreFactoryAddress: sepoliaAddresses.v3CoreFactoryAddress,
   multicallAddress: sepoliaAddresses.multicall2Address,
