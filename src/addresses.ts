@@ -134,15 +134,15 @@ const OPTIMISM_GOERLI_ADDRESSES: ChainAddresses = {
 }
 
 // optimism sepolia addresses
-const OPTIMISM_SEPOLIA_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '0x8CE191193D15ea94e11d327b4c7ad8bbE520f6aF',
-  multicallAddress: '0x80e4e06841bb76AA9735E0448cB8d003C0EF009a',
-  quoterAddress: '0x0FBEa6cf957d95ee9313490050F6A0DA68039404',
-  v3MigratorAddress: '0xE7EcbAAaA54D007A00dbb6c1d2f150066D69dA07',
-  nonfungiblePositionManagerAddress: '0xdA75cEf1C93078e8b736FCA5D5a30adb97C8957d',
-  tickLensAddress: '0xCb7f54747F58F8944973cea5b8f4ac2209BadDC5',
-  swapRouter02Address: '0x94cC0AaC535CCDB3C01d6787D6413C739ae12bc4'
-}
+// const OPTIMISM_SEPOLIA_ADDRESSES: ChainAddresses = {
+//   v3CoreFactoryAddress: '0x8CE191193D15ea94e11d327b4c7ad8bbE520f6aF',
+//   multicallAddress: '0x80e4e06841bb76AA9735E0448cB8d003C0EF009a',
+//   quoterAddress: '0x0FBEa6cf957d95ee9313490050F6A0DA68039404',
+//   v3MigratorAddress: '0xE7EcbAAaA54D007A00dbb6c1d2f150066D69dA07',
+//   nonfungiblePositionManagerAddress: '0xdA75cEf1C93078e8b736FCA5D5a30adb97C8957d',
+//   tickLensAddress: '0xCb7f54747F58F8944973cea5b8f4ac2209BadDC5',
+//   swapRouter02Address: '0x94cC0AaC535CCDB3C01d6787D6413C739ae12bc4'
+// }
 
 // arbitrum goerli v3 addresses
 const ARBITRUM_GOERLI_ADDRESSES: ChainAddresses = {
@@ -155,15 +155,15 @@ const ARBITRUM_GOERLI_ADDRESSES: ChainAddresses = {
 }
 
 // arbitrum sepolia v3 addresses
-const ARBITRUM_SEPOLIA_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '0x248AB79Bbb9bC29bB72f7Cd42F17e054Fc40188e',
-  multicallAddress: '0x2B718b475e385eD29F56775a66aAB1F5cC6B2A0A',
-  quoterAddress: '0x2779a0CC1c3e0E44D2542EC3e79e3864Ae93Ef0B',
-  v3MigratorAddress: '0x398f43ef2c67B941147157DA1c5a868E906E043D',
-  nonfungiblePositionManagerAddress: '0x6b2937Bde17889EDCf8fbD8dE31C3C2a70Bc4d65',
-  tickLensAddress: '0x0fd18587734e5C2dcE2dccDcC7DD1EC89ba557d9',
-  swapRouter02Address: '0x101F443B4d1b059569D643917553c771E1b9663E'
-}
+// const ARBITRUM_SEPOLIA_ADDRESSES: ChainAddresses = {
+//   v3CoreFactoryAddress: '0x248AB79Bbb9bC29bB72f7Cd42F17e054Fc40188e',
+//   multicallAddress: '0x2B718b475e385eD29F56775a66aAB1F5cC6B2A0A',
+//   quoterAddress: '0x2779a0CC1c3e0E44D2542EC3e79e3864Ae93Ef0B',
+//   v3MigratorAddress: '0x398f43ef2c67B941147157DA1c5a868E906E043D',
+//   nonfungiblePositionManagerAddress: '0x6b2937Bde17889EDCf8fbD8dE31C3C2a70Bc4d65',
+//   tickLensAddress: '0x0fd18587734e5C2dcE2dccDcC7DD1EC89ba557d9',
+//   swapRouter02Address: '0x101F443B4d1b059569D643917553c771E1b9663E'
+// }
 
 // sepolia v3 addresses
 const SEPOLIA_ADDRESSES: ChainAddresses = {
@@ -222,9 +222,9 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.CELO_ALFAJORES]: CELO_ADDRESSES,
   [ChainId.BNB]: BNB_ADDRESSES,
   [ChainId.OPTIMISM_GOERLI]: OPTIMISM_GOERLI_ADDRESSES,
-  [ChainId.OPTIMISM_SEPOLIA]: OPTIMISM_SEPOLIA_ADDRESSES,
+  // [ChainId.OPTIMISM_SEPOLIA]: OPTIMISM_SEPOLIA_ADDRESSES,
   [ChainId.ARBITRUM_GOERLI]: ARBITRUM_GOERLI_ADDRESSES,
-  [ChainId.ARBITRUM_SEPOLIA]: ARBITRUM_SEPOLIA_ADDRESSES,
+  // [ChainId.ARBITRUM_SEPOLIA]: ARBITRUM_SEPOLIA_ADDRESSES,
   [ChainId.SEPOLIA]: SEPOLIA_ADDRESSES,
   [ChainId.AVALANCHE]: AVALANCHE_ADDRESSES,
   [ChainId.BASE]: BASE_ADDRESSES,
