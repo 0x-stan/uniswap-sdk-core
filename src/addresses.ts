@@ -1,4 +1,5 @@
 import { ChainId, SUPPORTED_CHAINS, SupportedChainsType } from './chains'
+import inMemoryAddresses from "./config/addresses.inmemory.json";
 
 type AddressMap = { [chainId: number]: string }
 
@@ -80,6 +81,18 @@ const GOERLI_ADDRESSES: ChainAddresses = {
   ...DEFAULT_ADDRESSES,
   v1MixedRouteQuoterAddress: '0xBa60b6e6fF25488308789E6e0A65D838be34194e'
 }
+
+// @todo
+const ZKSYNC_ERA_ADDRESSES: ChainAddresses = DEFAULT_ADDRESSES
+const ZKSYNC_ERA_SEPOLIA_ADDRESSES: ChainAddresses = DEFAULT_ADDRESSES
+const ZKSYNC_ERA_INMEMORY_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: inMemoryAddresses.v3CoreFactoryAddress,
+  multicallAddress: inMemoryAddresses.multicall2Address,
+  quoterAddress: inMemoryAddresses.quoterV2Address,
+  v3MigratorAddress: inMemoryAddresses.v3MigratorAddress,
+  nonfungiblePositionManagerAddress: inMemoryAddresses.nonfungibleTokenPositionManagerAddress
+}
+
 
 const OPTIMISM_ADDRESSES: ChainAddresses = DEFAULT_ADDRESSES
 const ARBITRUM_ONE_ADDRESSES: ChainAddresses = {
@@ -197,6 +210,9 @@ const BASE_GOERLI_ADDRESSES: ChainAddresses = {
 
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.MAINNET]: MAINNET_ADDRESSES,
+  [ChainId.ZKSYNC_ERA]: ZKSYNC_ERA_ADDRESSES,
+  [ChainId.ZKSYNC_ERA_SEPOLIA]: ZKSYNC_ERA_SEPOLIA_ADDRESSES,
+  [ChainId.ZKSYNC_ERA_INMEMORY]: ZKSYNC_ERA_INMEMORY_ADDRESSES,
   [ChainId.OPTIMISM]: OPTIMISM_ADDRESSES,
   [ChainId.ARBITRUM_ONE]: ARBITRUM_ONE_ADDRESSES,
   [ChainId.POLYGON]: POLYGON_ADDRESSES,
