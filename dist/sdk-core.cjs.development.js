@@ -119,21 +119,21 @@ var inMemoryAddresses = {
 	swapRouter02: swapRouter02
 };
 
-var v3CoreFactoryAddress$1 = "0xb43671017878b3B81929F5c9A9a465066A232118";
-var multicall2Address$1 = "0x63393f9ad741bf64c34e0e30F5A70b286e9056f9";
-var proxyAdminAddress$1 = "0xF33D4d9F02F9a687599B18B81a9AA206A2045aD1";
-var tickLensAddress$1 = "0x2eF54CB1cb5846524100537f01F7d3231E3BFdFe";
-var nftDescriptorLibraryAddressV1_3_0$1 = "0x5b6EB7d73B8516E702205Af4202704a9fa0049f8";
-var nonfungibleTokenPositionDescriptorAddressV1_3_0$1 = "0x8fAf109c29B2a3b0476FfF4AD48eC6b1A7885900";
-var descriptorProxyAddress$1 = "0xef494c2d99d3624EACaC2fD6601BAEBb168e7556";
-var nonfungibleTokenPositionManagerAddress$1 = "0xEfAA4a5D02aE3d037EdeEcE988E7CB9e93a6E2f6";
-var v3MigratorAddress$1 = "0x087080Db35114c0dF351a0C8B40545bF4bDCDB0E";
-var v3StakerAddress$1 = "0xd29FD3C8E5d698eb79C606DCFb7c4bbbB6AFbd63";
-var quoterV2Address$1 = "0x3F314903442cf8353b41916281A9c149bfe0D940";
-var swapRouter02$1 = "0xb84a367362731172F0a4A79B5cD60798451814fd";
+var v3CoreFactoryAddress$1 = "0x9905182472b721B487C7AB119318FeC16D462cF2";
+var multicall2Address$1 = "0xB577C1f8ff1f3E911b9F83632A48cEd0BF9B9395";
+var proxyAdminAddress$1 = "0xC4131BD8b5b0162CAC9e11de6B283c31DC5E2DB0";
+var tickLensAddress$1 = "0x9A015764b7C686d48919D7141ab4432F44772366";
+var nftDescriptorLibraryAddressV1_3_0$1 = "0xFd1f4AcEec4927C00F6c990664AD780839e0ba37";
+var nonfungibleTokenPositionDescriptorAddressV1_3_0$1 = "0xE506cb6B7B7Cc250609A681a953CC2bC606a75d5";
+var descriptorProxyAddress$1 = "0x74DCbA72bCD8c56FCd8fD662C3325e4d575FcF36";
+var nonfungibleTokenPositionManagerAddress$1 = "0x088F0DD86a78Fb45B85D1E2788cd30DE8Cc377E7";
+var v3MigratorAddress$1 = "0xFE2e5d9aB098fbF58A2929630cb1c7F08444a455";
+var v3StakerAddress$1 = "0x6a9DD90fF589E0a9DB24e96fFe842F30f3867c67";
+var quoterV2Address$1 = "0x2d4823afa49ca8AFe8759f3D7d8D2E38592ed66b";
+var swapRouter02$1 = "0x125856e66335caBE2C02d039C2CC014D3466f0B5";
+var WETH = "0x528499043839E2021Acce95fdf7C438692dc3c04";
 var permit2 = "0x176675327B4Af378fB0aE8f424706Ac76aB3FCA3";
-var universalRouter = "0xDa29DAb8054AC1d8fa88d0BdC198f0925bc90767";
-var WETH = "0x3b77A39Ad9beaCE35e2f4E69763E26fc7a0d1f47";
+var universalRouter = "0x23Ac60FB84ffC40380B0561d24bdb06F06E246Cc";
 var sepoliaAddresses = {
 	v3CoreFactoryAddress: v3CoreFactoryAddress$1,
 	multicall2Address: multicall2Address$1,
@@ -147,9 +147,9 @@ var sepoliaAddresses = {
 	v3StakerAddress: v3StakerAddress$1,
 	quoterV2Address: quoterV2Address$1,
 	swapRouter02: swapRouter02$1,
+	WETH: WETH,
 	permit2: permit2,
-	universalRouter: universalRouter,
-	WETH: WETH
+	universalRouter: universalRouter
 };
 
 var _V2_FACTORY_ADDRESSES, _V2_ROUTER_ADDRESSES, _CHAIN_TO_ADDRESSES_M, _GOVERNANCE_ALPHA_V1_, _GOVERNANCE_BRAVO_ADD, _MERKLE_DISTRIBUTOR_A, _ARGENT_WALLET_DETECT, _SOCKS_CONTROLLER_ADD;
