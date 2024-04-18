@@ -1,6 +1,6 @@
 export enum ChainId {
   MAINNET = 1,
-  GOERLI = 5,
+  // GOERLI = 5,
   SEPOLIA = 11155111,
   ZKSYNC_ERA = 324,
   ZKSYNC_ERA_SEPOLIA = 300,
@@ -15,12 +15,12 @@ export enum ChainId {
   POLYGON_MUMBAI = 80001,
   CELO = 42220,
   CELO_ALFAJORES = 44787,
-  GNOSIS = 100,
+  // GNOSIS = 100,
   // MOONBEAM = 1284,
-  BNB = 56,
-  AVALANCHE = 43114,
+  // BNB = 56,
+  // AVALANCHE = 43114,
   // BASE_GOERLI = 84531,
-  BASE = 8453
+  // BASE = 8453
 }
 
 export const SUPPORTED_CHAINS = [
@@ -36,13 +36,13 @@ export const SUPPORTED_CHAINS = [
   // ChainId.ARBITRUM_SEPOLIA,
   ChainId.POLYGON,
   ChainId.POLYGON_MUMBAI,
-  ChainId.GOERLI,
+  // ChainId.GOERLI,
   ChainId.SEPOLIA,
   ChainId.CELO_ALFAJORES,
   ChainId.CELO,
-  ChainId.BNB,
-  ChainId.AVALANCHE,
-  ChainId.BASE,
+  // ChainId.BNB,
+  // ChainId.AVALANCHE,
+  // ChainId.BASE,
   // ChainId.BASE_GOERLI
 ] as const
 export type SupportedChainsType = typeof SUPPORTED_CHAINS[number]
